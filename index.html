@@ -1,56 +1,56 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Student Grade Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <div>
-        <h1 class="welcomeCls">Welcome</h1>
-        <p>This is a simple HTML document.</p>
+<body class="bg-light">
+    <nav class="navbar navbar-dark bg-dark mb-5">
+        <div class="container">
+            <a class='navbar-brand mb-0 h1' href='index.html'>Student Grade Tracker</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <h2>Student Management</h2>
+            </div>
+            <div class="col-md-4 text-end">
+                <a class='btn btn-primary' href='add-student.html'>+ Add Student</a>
+                <button class="btn btn-danger ms-2" id="clearAllBtn">Clear All</button>
+            </div>
+        </div>
+
+        <!-- Students Table -->
+        <div class="card">
+            <div class="table-responsive">
+                <table class="table table-hover mb-0" id="studentsTable">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Name</th>
+                            <th>Student ID</th>
+                            <th>Math</th>
+                            <th>English</th>
+                            <th>Science</th>
+                            <th>Average</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <tr>
+                            <td colspan="9" class="text-center text-muted py-4">
+                                No students added yet. Click "Add Student" to get started.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-
-    <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>John</td>
-      <td>Doe</td>
-      <td>@social</td>
-    </tr>
-  </tbody>
-</table>
-
-    <div>
-        <h1>Another Welcome</h1>
-        <p>This is another simple HTML document.</p>
-    </div>
-
-    <h1 id="helloWorld">Hello World</h1>
-
-    <h1 class="welcomeCls">Last Hello World</h1>
 </body>
 </html>
